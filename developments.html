@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Sep 14 2018 00:34:00 GMT+0000 (UTC)  -->
+<!--  Last Published: Fri Sep 14 2018 06:33:24 GMT+0000 (UTC)  -->
 <html data-wf-page="5b9ac265d4f6269b892373c5" data-wf-site="5b9760dcc09428d7ca080f68">
 <head>
   <meta charset="utf-8">
@@ -148,12 +148,12 @@ input[type=range].slider:focus::-ms-fill-upper {
           </div>
           <div class="tabs-content w-tab-content">
             <div data-w-tab="Grid View" class="tab-pane w-tab-pane w--tab-active">
-              <div class="horizontal-list no-margin w-dyn-list">
+              <div class="collection-list w-dyn-list">
                 <div class="collection-list w-dyn-items">
-                  <div class="no-margin w-dyn-item">
-                    <div class="row no-margin border-bottom">
-                      <div data-delay="3000" data-animation="slide" data-autoplay="1" data-nav-spacing="5" data-duration="500" data-infinite="1" class="column w-slider">
-                        <div class="mask w-slider-mask">
+                  <div class="row no-margin vertical w-dyn-item">
+                    <div class="column">
+                      <div data-delay="4000" data-animation="slide" data-autoplay="1" data-duration="500" data-infinite="1" class="slider w-slider">
+                        <div class="w-slider-mask">
                           <div class="slide w-slide"></div>
                           <div class="slide w-slide"></div>
                           <div class="slide w-slide"></div>
@@ -167,7 +167,19 @@ input[type=range].slider:focus::-ms-fill-upper {
                         </div>
                         <div class="slide-nav w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-slider-nav w-round"></div>
                       </div>
-                      <div class="column half margin-15"></div>
+                    </div>
+                    <div class="column half border-bottom mobile">
+                      <div class="details">
+                        <div class="detail-text black"></div>
+                        <div class="detail-text margin-left-right">—</div>
+                        <div class="detail-text"></div>
+                        <div class="detail-text">,</div>
+                        <div class="detail-text state"></div>
+                        <div class="detail-text zip"></div>
+                        <h4 class="h4"></h4>
+                        <p class="short-desc"></p>
+                      </div><a class="link float-left">More Info &amp; Availabilities</a>
+                      <div class="status"></div>
                     </div>
                   </div>
                 </div>
@@ -182,23 +194,18 @@ input[type=range].slider:focus::-ms-fill-upper {
                   <div class="collection-item vertical w-dyn-item">
                     <div class="list">
                       <div class="column">
-                        <div class="details vertical">
-                          <h5 class="h5"></h5>
-                          <div class="detail-text"></div>
-                          <div class="detail-text">, </div>
-                          <div class="detail-text state"></div>
-                          <div class="detail-text zip"></div>
+                        <div class="detail-text black"></div>
+                        <div class="detail-text margin-left-right">—</div>
+                        <div class="detail-text"></div>
+                        <div class="detail-text">,</div>
+                        <div class="detail-text state"></div>
+                        <div class="detail-text zip"></div>
+                        <h4 class="h4"></h4><a class="link float-left position">More Info &amp; Availabilities</a></div>
+                      <div class="column">
+                        <div class="price-block list-view">
+                          <p class="short-desc no-margin"></p>
                         </div>
                       </div>
-                      <div class="column w-clearfix">
-                        <div class="price-block list-view">
-                          <h5 class="h5 price">$</h5>
-                          <h5 class="h5 price"></h5>
-                        </div>
-                        <div class="detail-text no-margin"></div>
-                        <div class="detail-text label">BD</div>
-                        <div class="detail-text no-margin"></div>
-                        <div class="detail-text label">BA</div><a class="link float-right list-view">View Details</a></div>
                     </div>
                   </div>
                 </div>

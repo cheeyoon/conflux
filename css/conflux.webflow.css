@@ -54,10 +54,6 @@
   color: #000;
 }
 
-.icon.white {
-  color: #fff;
-}
-
 .logo.invert {
   -webkit-filter: invert(100%);
   filter: invert(100%);
@@ -270,20 +266,8 @@
   overflow: auto;
 }
 
-.column.listing {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+.column.scroll.border {
+  border-right: 0.5px solid rgba(0, 0, 0, .25);
 }
 
 .column.left {
@@ -292,6 +276,10 @@
 
 .column.right {
   padding-left: 10px;
+}
+
+.column.margin-15 {
+  padding: 15px;
 }
 
 .row {
@@ -322,6 +310,10 @@
 .row.no-margin.mobile {
   overflow: hidden;
   height: 92.5%;
+}
+
+.row.no-margin.border-bottom {
+  border-bottom: 0.5px solid rgba(0, 0, 0, .25);
 }
 
 .row.margin-100 {
@@ -397,8 +389,8 @@
   margin-bottom: 50px;
 }
 
-.text.white {
-  color: #fff;
+.text.bold {
+  font-weight: 600;
 }
 
 .info-block {
@@ -484,9 +476,7 @@
 }
 
 .listing-block.no-border {
-  border-style: none solid none none;
-  border-right-width: 0.5px;
-  border-right-color: hsla(0, 0%, 61%, .5);
+  border-style: none;
 }
 
 .left-arrow {
@@ -536,10 +526,6 @@
   margin-left: 5px;
 }
 
-.detail-text.price-range {
-  margin-left: 15px;
-}
-
 .detail-text.black {
   color: #000;
 }
@@ -554,6 +540,10 @@
 
 .details.vertical {
   padding: 0px;
+}
+
+.details.border-right {
+  border-right: 0.5px solid rgba(0, 0, 0, .25);
 }
 
 .horizontal-list {
@@ -697,17 +687,6 @@
   margin-right: 15px;
 }
 
-.tabs-dropdown {
-  position: fixed;
-  color: #fff;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.dropdown-toggle {
-  color: #fff;
-}
-
 .dropdown-list.w--open {
   background-color: #000;
   color: #fff;
@@ -725,10 +704,6 @@
   border-bottom: 0.5px solid hsla(0, 0%, 61%, .5);
   background-color: #fff;
   color: #000;
-}
-
-.dropdown-link {
-  color: #fff;
 }
 
 .no-margin {
@@ -833,8 +808,76 @@
   margin-bottom: 25px;
 }
 
-.range-block.no-margin {
+.radio-buttons {
+  position: fixed;
+  z-index: 999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  margin-top: 23px;
+  margin-left: 15px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Avenir Next', sans-serif;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.check-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.check-block.no-margin {
   margin-bottom: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.checkboxes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.checkboxes.margin {
+  margin-bottom: 15px;
+}
+
+.values {
+  margin-top: -17px;
+  float: right;
 }
 
 html.w-mod-js *[data-ix="fade-in-from-top"] {
@@ -951,6 +994,12 @@ html.w-mod-js *[data-ix="fade-in-from-bottom"] {
   .column.half {
     width: 100%;
   }
+  .column.left {
+    padding-right: 0px;
+  }
+  .column.right {
+    padding-left: 0px;
+  }
   .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -965,6 +1014,12 @@ html.w-mod-js *[data-ix="fade-in-from-bottom"] {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .row.no-margin {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
   }
   .row.no-margin.height-50.mobile {
     margin-top: 25px;

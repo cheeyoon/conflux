@@ -188,6 +188,10 @@
   padding-bottom: 40px;
 }
 
+.section.overflow {
+  overflow: visible;
+}
+
 .footer {
   position: relative;
   padding-top: 50px;

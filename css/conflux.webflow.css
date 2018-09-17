@@ -1380,6 +1380,9 @@ html.w-mod-js *[data-ix="fade-in-from-bottom"] {
   .navbar {
     border-top-style: none;
   }
+  .navbar.border {
+    margin-top: 0px;
+  }
   .nav-menu {
     background-color: #000;
   }

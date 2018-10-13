@@ -1,3 +1,23 @@
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
 .body {
   font-family: 'Avenir Next', sans-serif;
   color: #000;
@@ -88,12 +108,20 @@
   background-size: auto, 136px;
 }
 
+.hero.short {
+  height: 50vh;
+}
+
 .header {
   position: relative;
   top: 50%;
   -webkit-transform: translate(0px, -50%);
   -ms-transform: translate(0px, -50%);
   transform: translate(0px, -50%);
+}
+
+.header.edit {
+  top: 55%;
 }
 
 .h1 {
@@ -206,6 +234,10 @@
 
 .section.overflow {
   overflow: visible;
+}
+
+.section.terms {
+  padding-top: 0px;
 }
 
 .footer {
@@ -644,6 +676,14 @@
 
 .info-block.full-width {
   width: 100%;
+}
+
+.info-block.margin-50 {
+  margin-bottom: 50px;
+}
+
+.info-block.margin-100 {
+  margin-bottom: 100px;
 }
 
 .graphic {
@@ -1418,6 +1458,30 @@
   font-size: 12px;
 }
 
+.tabs-menu-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.tab-link-2 {
+  padding-top: 19px;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tab-link-2.w--current {
+  padding-top: 9px;
+  border-top: 10px solid #000;
+  background-color: #fff;
+}
+
 html.w-mod-js *[data-ix="fade-in-from-top"] {
   opacity: 0;
   -webkit-transform: translate(0px, -70px);
@@ -1531,6 +1595,9 @@ html.w-mod-js *[data-ix="fade-in-from-bottom"] {
     -webkit-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
+  }
+  .header.edit {
+    top: 5%;
   }
   .section.padding-50 {
     padding-top: 75px;
@@ -1846,6 +1913,10 @@ html.w-mod-js *[data-ix="fade-in-from-bottom"] {
   }
   .avail-list {
     width: 100%;
+  }
+  .tab-link-2 {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 

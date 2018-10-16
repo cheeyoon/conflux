@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Sat Oct 13 2018 00:03:51 GMT+0000 (UTC)  -->
+<!--  Last Published: Tue Oct 16 2018 21:58:28 GMT+0000 (UTC)  -->
 <html data-wf-page="5b9b0e986b2ea1e13cf9c8da" data-wf-site="5b9760dcc09428d7ca080f68">
 <head>
   <meta charset="utf-8">
@@ -124,7 +124,7 @@ input[type=range].slider:focus::-ms-fill-upper {
     <div class="container w-container">
       <div class="row no-margin horizontal" data-ix="fade-in">
         <div class="column justify wider">
-          <div class="top-block no-margin">
+          <div class="top-block">
             <h2 class="h2 no-margin small"></h2>
             <div class="detail-text black"></div>
             <div class="detail-text margin-left-right">—</div>
@@ -133,6 +133,7 @@ input[type=range].slider:focus::-ms-fill-upper {
             <div class="detail-text state"></div>
             <div class="detail-text zip"></div>
           </div>
+          <div class="bottom-block"><a href="#" class="link">View Website</a></div>
         </div>
         <div class="column flex-right justify">
           <div class="top-block flex-horizontal">
@@ -163,6 +164,9 @@ input[type=range].slider:focus::-ms-fill-upper {
           <div class="button-link">Media</div>
         </a>
       </div>
+      <a href="#" class="maps-block w-inline-block">
+        <div class="small-map w-widget w-widget-map"></div>
+      </a>
     </div>
   </div>
   <div class="section top-margin-50">
@@ -291,7 +295,7 @@ input[type=range].slider:focus::-ms-fill-upper {
       </div>
       <h2 class="h2 margin-50" data-ix="fade-in-2">Plans</h2>
       <div class="div margin-75" data-ix="fade-in-from-bottom">
-        <div data-delay="4000" data-animation="slide" data-autoplay="1" data-duration="500" data-infinite="1" class="slider _75 w-slider">
+        <div data-animation="slide" data-duration="500" data-infinite="1" class="slider _75 height w-slider">
           <div class="mask w-slider-mask">
             <div class="slide w-slide"></div>
             <div class="slide w-slide"></div>
@@ -337,7 +341,7 @@ input[type=range].slider:focus::-ms-fill-upper {
               <div class="avail-text">PH</div>
             </div>
             <div class="column table">
-              <div class="avail-text">Available</div>
+              <div class="avail-text available">Available</div>
             </div>
             <div class="column table">
               <div class="avail-text">$5,000,000</div>
@@ -362,7 +366,7 @@ input[type=range].slider:focus::-ms-fill-upper {
               <div class="avail-text">1013</div>
             </div>
             <div class="column table">
-              <div class="avail-text">Available</div>
+              <div class="avail-text available">Available</div>
             </div>
             <div class="column table">
               <div class="avail-text">$4,000,000</div>
@@ -387,7 +391,7 @@ input[type=range].slider:focus::-ms-fill-upper {
               <div class="avail-text">915</div>
             </div>
             <div class="column table">
-              <div class="avail-text">Available</div>
+              <div class="avail-text sold">Sold</div>
             </div>
             <div class="column table">
               <div class="avail-text">$3,000,000</div>
@@ -412,7 +416,7 @@ input[type=range].slider:focus::-ms-fill-upper {
               <div class="avail-text">807</div>
             </div>
             <div class="column table">
-              <div class="avail-text">Available</div>
+              <div class="avail-text sold">Sold</div>
             </div>
             <div class="column table">
               <div class="avail-text">$2,000,000</div>
@@ -437,7 +441,7 @@ input[type=range].slider:focus::-ms-fill-upper {
               <div class="avail-text">720</div>
             </div>
             <div class="column table">
-              <div class="avail-text">Available</div>
+              <div class="avail-text coming-soon">Coming Soon</div>
             </div>
             <div class="column table">
               <div class="avail-text">$1,000,000</div>
@@ -462,7 +466,7 @@ input[type=range].slider:focus::-ms-fill-upper {
               <div class="avail-text">611</div>
             </div>
             <div class="column table">
-              <div class="avail-text">Available</div>
+              <div class="avail-text available">Available</div>
             </div>
             <div class="column table">
               <div class="avail-text">$900,000</div>
@@ -487,7 +491,7 @@ input[type=range].slider:focus::-ms-fill-upper {
               <div class="avail-text">532</div>
             </div>
             <div class="column table">
-              <div class="avail-text">Available</div>
+              <div class="avail-text sold">Sold</div>
             </div>
             <div class="column table">
               <div class="avail-text">$800,000</div>
@@ -512,7 +516,7 @@ input[type=range].slider:focus::-ms-fill-upper {
               <div class="avail-text">425</div>
             </div>
             <div class="column table">
-              <div class="avail-text">Available</div>
+              <div class="avail-text sold">Sold</div>
             </div>
             <div class="column table">
               <div class="avail-text">$700,000</div>
@@ -536,7 +540,11 @@ input[type=range].slider:focus::-ms-fill-upper {
       <div class="form-block w-form" data-ix="fade-in-from-bottom">
         <form id="email-form" name="email-form" data-name="Email Form" class="row _75">
           <div class="column right-padding-5"><input type="text" class="input w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Full name" id="name-2" required=""><input type="email" class="input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email" id="email-2" required=""><input type="tel" class="input w-input" maxlength="256" name="phone-2" data-name="Phone 2" placeholder="Phone" id="phone-2"><input type="submit" value="Submit" data-wait="Please wait..." class="button full-width w-button"></div>
-          <div class="column left-padding-5"><textarea id="field-2" name="field-2" placeholder="How can we help?" maxlength="5000" required="" data-name="Field 2" class="text-area w-input"></textarea></div>
+          <div class="column left-padding-5"><textarea id="field-2" name="field-2" placeholder="How can we help?" maxlength="5000" required="" data-name="Field 2" class="text-area w-input"></textarea>
+            <a href="tel:6026882292" class="contact-call w-inline-block">
+              <div class="text call">Call: (602) 688-2292</div>
+            </a>
+          </div>
         </form>
         <div class="w-form-done">
           <div>Thank you! Your submission has been received!</div>
@@ -547,13 +555,7 @@ input[type=range].slider:focus::-ms-fill-upper {
       </div>
     </div>
   </div>
-  <div class="sticky-cta w-hidden-small w-hidden-tiny">
-    <div class="container w-container">
-      <div class="floating-contact" data-ix="fade-in-from-bottom">
-        <div class="small-map w-widget w-widget-map"></div><a target="_blank" class="button full-width w-button">Visit Website</a></div>
-    </div>
-  </div>
-  <div class="sticky-cta pattern w-hidden-tiny">
+  <div class="sticky-cta pattern w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny">
     <div class="container w-container">
       <div class="pattern-track" data-ix="fade-in-2"></div>
     </div>

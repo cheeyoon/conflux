@@ -609,6 +609,12 @@ p {
   float: right;
 }
 
+.link.float-left.list-view {
+  left: auto;
+  right: 0px;
+  bottom: 0px;
+}
+
 .link.float-left.search {
   left: auto;
   right: 15px;
@@ -963,6 +969,7 @@ p {
 
 .price-block.list-view {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .price-block.search {
@@ -1313,6 +1320,21 @@ p {
   bottom: 15px;
   padding-bottom: 2px;
   font-weight: 600;
+}
+
+.status.top {
+  top: 15px;
+  right: 15px;
+  bottom: auto;
+  margin-top: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.status.top.listview {
+  top: 0px;
+  right: 0px;
+  margin-top: 0px;
 }
 
 .project-quote {

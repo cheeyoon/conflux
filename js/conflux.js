@@ -1507,7 +1507,7 @@ Webflow.define('dropdown', module.exports = function ($, _) {
     data.manageZ = zIndex === defaultZIndex || zIndex === defaultZIndex + 1;
 
     data.config = {
-      hover: Boolean(data.el.attr('data-hover')) && !touch,
+      hover: (data.el.attr('data-hover') === true || data.el.attr('data-hover') === '1') && !touch,
       delay: Number(data.el.attr('data-delay')) || 0
     };
   }

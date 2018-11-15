@@ -1936,6 +1936,10 @@ p {
   flex: 1;
 }
 
+.dropdown {
+  font-size: 12px;
+}
+
 html.w-mod-js *[data-ix="fade-in-from-top"] {
   opacity: 0;
   -webkit-transform: translate(0px, -70px);

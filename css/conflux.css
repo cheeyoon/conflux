@@ -173,11 +173,15 @@ p {
 }
 
 .hero.image.picture {
-  background-image: url('../images/about.png');
+  background-image: url('../images/about_1.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.hero.image.half {
+  height: 50vh;
 }
 
 .header {
